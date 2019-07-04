@@ -1,0 +1,23 @@
+<!-- heading title -->
+<head>
+    <title>Login Page</title>
+    <!-- importing css file for reset password -->
+    <link rel="stylesheet" href="../css/resetPass.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+                <h1>Reset Password</h1>
+                <input type="password" placeholder="New Password" name="password" ng-model="password">
+                <br /><br />
+                <input type="password" placeholder="Confirm Password" name="cpassword" ng-model="cpassword">
+                <br /><br />
+                <button type="submit" ng-click="resetPassword()">Reset</button>
+                <br /><br />
+                <!-- login link -->
+                <p class="message">Sign In
+                        <a ui-sref="login" ui-sref-active="active">Login</a>
+                </p>
+        </div>
+    </div>
+</body>

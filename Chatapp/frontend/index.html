@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Index file</title>
+    <!-- required CDNs angular.min.js angular.route.js -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
+    <!-- calling app.js -->
+    <script src="./app.js"></script>
+    <!-- Required controller files -->
+    <script src="./controller/loginController.js"></script>
+    <script src="./controller/forgotController.js"></script>
+    <script src="./controller/registerController.js"></script>
+    <script src="./controller/resetController.js"></script>
+    <script src="./controller/chatController.js"></script>
+    <!-- Required services files -->
+    <script src="./services/loginServices.js"></script>
+    <script src="./services/registerServices.js"></script>
+    <script src="./services/forgotServices.js"></script>
+    <script src="./services/resetservices.js"></script>
+    <script src="./services/chatServices.js"></script>
+    <!-- Required css files -->
+    <script rel="stylesheet" href="./css/login.css" type="text/css"></script>
+    <script rel="stylesheet" href="./css/registration.css" type="text/css"></script>
+    <script rel="stylesheet" href="./css/forgotPass.css" type="text/css"></script>
+    <script rel="stylesheet" href="./css/resetPass.css" type="text/css"></script>
+    <!-- required CDNs for socket-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.min.js"></script>
+</head>
+<!-- load chatapp module to run the program -->
+<body ng-app="chatApp">
+    <!-- here we inject our code -->
+    <ui-view>
+
+    </ui-view>
+</body>
+</html>

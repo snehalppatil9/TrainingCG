@@ -1,0 +1,63 @@
+/* Bordered Form */
+.form {
+  border-radius: 25px;
+  box-align: center;
+  position: relative;
+  max-width: 360px;
+  margin: 0 auto 200px;
+  padding: 60px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.login-page{
+  text-align: center; 
+   vertical-align: middle; 
+   box-align: center;
+  }
+   h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-shadow: 1px 1px;
+  }
+  body {
+    background:url(../assets/login1.jpg);
+    padding: 100px;
+    font-family: "elephant";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    position: relative;     
+  }
+.form input {
+    font-family: fantasy;
+    outline: 0;
+    background:whitesmoke ;
+    width: 100%;
+    border: 0;
+    border-radius: 15px;
+    margin: 0 0 15px;
+    padding: 18px;
+    font-size: 15px;
+  }
+  .form button {
+    font-family:fantasy;
+    background: silver;
+    border-radius: 15px;
+    background-color:whitesmoke;
+    width: 50%;
+    border: 1;
+    padding: 18px;
+    color:black;
+    font-size: 25px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+ p{
+  text-align: left;
+  font-size: 18px;
+  }
+  a {
+    color: black;
+    font-size: 18px;
+  }
+ 

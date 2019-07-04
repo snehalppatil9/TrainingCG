@@ -1,0 +1,26 @@
+<html>
+<!-- heading title -->
+<head>
+    <title>Login Page</title>
+    <!-- importing css file for login -->
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <h1>Login</h1>
+            <br /><br />
+            <input type="email" placeholder="Enter Username Or Email" name="email" ng-model="email">
+            <br /><br />
+            <input type="password" placeholder="Enter Password" name="password" ng-model="password">
+            <br /><br />
+            <button type="submit" ng-click="login()">Sign in</button>
+            <br /><br />
+            <p><a ui-sref="forgotPassword">Forgot password</a></p>
+            <p class="message">Not registered?
+                <a ui-sref="register" ui-sref-active="active">Create an account</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- heading title -->
+<head>
+    <title>Forgot Page</title>
+    <!-- importing css file for foegot password -->
+    <link rel="stylesheet" href="../css/forgotPass.css">
+</head>
+<body>
+<div class="login-page">
+    <div class="form">
+        <h1>Forgot Password</h1>
+        <input type="text" placeholder="Enter Email" name="email" ng-model="email">
+        <br /><br />
+        <!-- after clicking the submit button it goes to forgot controller -->
+        <button type="submit" ng-click="forgotPassword()">Submit</button>
+        <br /><br />
+        <!-- displaying the user message -->
+        <font color="red">{{loginMessage}}</font> <br>
+        <!-- login and reset password link -->
+        <p>Sign in instead!
+            <span ui-sref="login">
+                <a href="">Sign in</a></p></span>
+        <p>link to resetPassword
+            <span ui-sref="resetPassword">
+                <a href="">Press here</a></p></span>
+    </div>
+</div>
+</body>

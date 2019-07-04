@@ -1,0 +1,51 @@
+<!-- importing dashboard css file -->
+<link rel="stylesheet" href="../css//dashboard.css">
+<!-- herader title -->
+<div class="header">
+    <h3>Chat App</h3>
+    <a>welcome to chatapp {{currentUserName}}</a>
+    <hr>
+</div>
+<!-- left box -->
+<div class="left">
+    <!-- recent and search box -->
+    <div class="headind_srch">
+        <div class="recent_heading">
+            <h3>Recent</h3>
+        </div>
+        <div class="srch_bar">
+            <input type="text" class="search-bar" placeholder="Search">
+        </div>
+    </div>
+    <!-- displaying contact list -->
+    <p ng-repeat="x in allUser" ng-click="person(x)" ng-show="currentUserName!=x.name">
+        {{x.name}}</p>
+    <button class="btn">
+        <a ui-sref="login">SignOut</a>
+    </button>
+</div>
+<!-- right box  -->
+<div class="right">
+    <div>
+        <p class="username"><b>{{receiverUserName}}</b></p>
+    </div>
+    <section>
+        <form>
+            <!-- displaying the user chat -->
+            <div class="chatLogs" ng-repeat="chat in allUserArr">
+                <div class="chat user" ng-show="currentUser != chat.senderUserId">
+                    <p class="chatMsg"> {{chat.message}}</p>
+                </div>
+                <div class="chat self" ng-show="currentUser == chat.senderUserId">
+                    <p class="chatMsg"> {{chat.message}}</p>
+                </div>
+            </div>
+
+    </section>
+    <div class="bottom">
+        <!-- textarea and send button -->
+        <textarea ng-model="message" id="txt" cols="20" rows="5" placeholder="Message........." class="text"></textarea>
+        <button ng-click=sendmessage(); class="btn1">send</button>
+    </div>
+    </form>
+</div>
